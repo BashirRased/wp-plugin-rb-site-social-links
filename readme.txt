@@ -3,7 +3,7 @@ Contributors: bashirrased
 Requires at least: 5.3
 Tested up to: 5.8
 Requires PHP: 5.6
-Stable tag: 1.0.2
+Stable tag: 1.0.3
 Tags: social, media, links, site.
 License: GPLv2
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -14,46 +14,102 @@ Dynamically add your website's social media links with WordPress dashboard gener
 
 RB Site Social Links plugin use for dynamically add your website social icon link. You need change only your social icon link href address or social icon text.
 
-### Usage
+== Usage ==
 
-= For Facebook Link with a tag element is the href attribute: =
-**Add PHP Code: ** `echo esc_url(get_option('rb_facebook_link'));`
+### For Facebook Link:
+* Add PHP Code:
+<span><?php</span>
+<span> echo esc_url(get_option('rb_facebook_link')); </span>
+<span>?></span>
 
-= For Twitter Link with a tag element is the href attribute: =
-**Add PHP Code: ** `echo esc_url(get_option('rb_twitter_link'));`
+### For Twitter Link:
+* Add PHP Code:
+<span><?php</span>
+<span> echo esc_url(get_option('rb_twitter_link')); </span>
+<span>?></span>
 
-= For LinkedIn Link with a tag element is the href attribute: =
-**Add PHP Code: ** `echo esc_url(get_option('rb_linkedin_link'));`
+### For LinkedIn Link:
+* Add PHP Code:
+<span><?php</span>
+<span> echo esc_url(get_option('rb_linkedin_link')); </span>
+<span>?></span>
 
-= For Instagram Link with a tag element is the href attribute: =
-**Add PHP Code: ** `echo esc_url(get_option('rb_instagram_link'));`
+### For Instagram Link:
+* Add PHP Code:
+<span><?php</span>
+<span> echo esc_url(get_option('rb_instagram_link')); </span>
+<span>?></span>
 
-= For Pinterest Link with a tag element is the href attribute: =
-**Add PHP Code: ** `echo esc_url(get_option('rb_pinterest_link'));`
+### For Pinterest Link:
+* Add PHP Code:
+<span><?php</span>
+<span> echo esc_url(get_option('rb_pinterest_link')); </span>
+<span>?></span>
 
-= For Behance Link with a tag element is the href attribute: =
-**Add PHP Code: ** `echo esc_url(get_option('rb_behance_link'));`
+### For Behance Link:
+* Add PHP Code:
+<span><?php</span>
+<span> echo esc_url(get_option('rb_behance_link')); </span>
+<span>?></span>
 
-= For Dribbble Link with a tag element is the href attribute: =
-**Add PHP Code: ** `echo esc_url(get_option('rb_dribbble_link'));`
+### For Dribbble Link:
+* Add PHP Code:
+<span><?php</span>
+<span> echo esc_url(get_option('rb_dribbble_link')); </span>
+<span>?></span>
 
-= For Github Link with a tag element is the href attribute: =
-**Add PHP Code: ** `echo esc_url(get_option('rb_github_link'));`
+### For Github Link:
+* Add PHP Code:
+<span><?php</span>
+<span> echo esc_url(get_option('rb_github_link')); </span>
+<span>?></span>
 
-= For YouTube Link with a tag element is the href attribute: =
-**Add PHP Code: ** `echo esc_url(get_option('rb_youtube_link'));`
+### For YouTube Link:
+* Add PHP Code:
+<span><?php</span>
+<span> echo esc_url(get_option('rb_youtube_link')); </span>
+<span>?></span>
 
-= For Blogger Link with a tag element is the href attribute: =
-**Add PHP Code: ** `echo esc_url(get_option('rb_blogger_link'));`
+### For Blogger Link:
+* Add PHP Code:
+<span><?php</span>
+<span> echo esc_url(get_option('rb_blogger_link')); </span>
+<span>?></span>
 
-= For WordPress.com Link with a tag element is the href attribute: =
-**Add PHP Code: ** `echo esc_url(get_option('rb_wordpress_link'));`
+### For WordPress.com Link:
+* Add PHP Code:
+<span><?php</span>
+<span> echo esc_url(get_option('rb_wordpress_link')); </span>
+<span>?></span>
 
-= For CodePen Link with a tag element is the href attribute: =
-**Add PHP Code: ** `echo esc_url(get_option('rb_codepen_link'));`
+### For CodePen Link:
+* Add PHP Code:
+<span><?php</span>
+<span> echo esc_url(get_option('rb_codepen_link')); </span>
+<span>?></span>
 
-= For Skype address: =
-**Add PHP Code: ** `echo esc_html(sprintf(__('Skype ID: %s','rb-site-social-links'), get_option( 'rb_skype_text')));`
+### For Skype Address:
+* Add PHP Code:
+<span><?php</span>
+<span> echo esc_html(printf(__('%s','rb-site-social-links'),</span>
+<span> get_option('rb_skype_text'))); </span>
+<span>?></span>
+
+== Screenshots ==
+1. WordPress Dashboard Admin -> Setting -> General Page.
+2. Usage Facebook Link.
+3. Usage Twitter Link.
+4. Usage LinkedIn Link.
+5. Usage Instagram Link.
+6. Usage Pinterest Link.
+7. Usage Behance Link.
+8. Usage Dribbble Link.
+9. Usage Github Link.
+10. Usage YouTube Link.
+11. Usage Blogger Link.
+12. Usage WordPress.com Link.
+13. Usage CodePen Link.
+14. Usage Skype Address.
 
 == Installation ==
 
@@ -75,6 +131,11 @@ Setting -> General Page
 Add your website's social media links
 
 == Changelog ==
+
+= 1.0.3 =
+* 10.12.2021 - Fourth version submission
+* Instagram Link Problem Solve
+* readme.txt edit
 
 = 1.0.2 =
 * 29.10.2021 - Third version submission

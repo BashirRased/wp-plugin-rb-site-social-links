@@ -5,11 +5,32 @@
  * Description: Dynamically add your website's social media links with WordPress dashboard general setting page.
  * Author: Bashir Rased
  * Author URI: https://profiles.wordpress.org/bashirrased2017/
- * Version: 1.0.2
+ * Version: 1.0.3
  * Text Domain: rb-site-social-links
  * License: GPLv2
  * License URI: https://www.gnu.org/licenses/gpl-2.0.html
  */
+
+add_action('activated_plugin', function ($plugin) {
+	if (plugin_basename(__FILE__) == $plugin) {
+		wp_redirect(admin_url('options-general.php#rb-social-links-section'));
+		die();
+	}
+});
+
+add_filter('plugin_action_links_' . plugin_basename(__FILE__), function ($links) {
+	$link = sprintf("<a href='%s' style='color:#b32d2e;'>%s</a>", admin_url( 'options-general.php#rb-social-links-section'), __('Settings', 'rb-site-social-links'));
+	array_push($links, $link);
+	return $links;
+});
+
+add_filter( 'plugin_row_meta', function ($links, $plugin) {
+	if (plugin_basename(__FILE__) == $plugin) {
+		$link = sprintf("<a href='%s' style='color:#b32d2e;'>%s</a>", esc_url('https://github.com/BashirRased/wp-plugin-rb-site-social-links'), __('Fork on Github', 'rb-site-social-links'));
+		array_push($links, $link);
+	}
+	return $links;
+}, 10, 2);
 
 function rb_site_social_links() {
     add_settings_section(
@@ -81,7 +102,7 @@ function rb_site_social_links() {
     );
     register_setting(
         'general',
-        'rb_linkedin_link',
+        'rb_instagram_link',
         array(
             'sanitize_callback' => 'esc_attr',
         )
@@ -223,10 +244,10 @@ function rb_site_social_links() {
         )
     );
 
-    // Skype Link Register Here
+    // Skype Address Register Here
     add_settings_field(
         'rb_skype_text',
-        __('Skype Link:', 'rb-site-social-links'),
+        __('Skype Address:', 'rb-site-social-links'),
         'rb_skype_text_input',
         'general',
         'rb_site_social_links_section',
@@ -244,7 +265,7 @@ function rb_site_social_links() {
 
 function rb_site_social_links_section_desc() {
     printf(__(
-        '<p>%s</p>','rb-site-social-links'),
+        '<p id="rb-social-links-section">%s</p>','rb-site-social-links'),
         'Add your website social media links.', 'rb-site-social-links'
     );
 }
@@ -429,12 +450,12 @@ function rb_codepen_link_input() {
     );
 }
 
-// Skype Link Callback Function Add Here
+// Skype Address Callback Function Add Here
 function rb_skype_text_input() {
     $rb_site_social_links_option = get_option('rb_skype_text');
 
     /* This code use for frontend page
-    <?php echo esc_html( sprintf( __( '%s', 'rb-site-social-links' ), get_option( 'rb_skype_text' ) ) ); ?> */ 
+    <?php echo esc_html(printf(__('%s', 'rb-site-social-links'), get_option('rb_skype_text'))); ?> */ 
 
     printf(__(
         '<input type="text" id="%1$s" class="large-text" name="%2$s" value="%3$s" placeholder="bashir.rased">','rb-site-social-links'),
