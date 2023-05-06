@@ -1,10 +1,11 @@
 <?php
 /**
  * Plugin Name: RB Site Social Links
- * Description: Dynamically add your website's social media links.
+ * Plugin URI: https://github.com/BashirRased/wp-plugin-rb-site-social-links
+ * Description: Dynamically add your website's social media links with WordPress dashboard general setting page.
  * Author: Bashir Rased
  * Author URI: https://profiles.wordpress.org/bashirrased2017/
- * Version: 1.0.1
+ * Version: 1.0.2
  * Text Domain: rb-site-social-links
  * License: GPLv2
  * License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -224,16 +225,16 @@ function rb_site_social_links() {
 
     // Skype Link Register Here
     add_settings_field(
-        'rb_skype_link',
+        'rb_skype_text',
         __('Skype Link:', 'rb-site-social-links'),
-        'rb_skype_link_input',
+        'rb_skype_text_input',
         'general',
         'rb_site_social_links_section',
-        ["label_for" => "rb_skype_link"]
+        ["label_for" => "rb_skype_text"]
     );
     register_setting(
         'general',
-        'rb_skype_link',
+        'rb_skype_text',
         array(
             'sanitize_callback' => 'esc_attr',
         )
@@ -429,16 +430,16 @@ function rb_codepen_link_input() {
 }
 
 // Skype Link Callback Function Add Here
-function rb_skype_link_input() {
-    $rb_site_social_links_option = get_option('rb_skype_link');
+function rb_skype_text_input() {
+    $rb_site_social_links_option = get_option('rb_skype_text');
 
     /* This code use for frontend page
-    <?php echo esc_html( sprintf( __( '%s', 'rb-site-social-links' ), get_option( 'rb_skype_link' ) ) ); ?> */ 
+    <?php echo esc_html( sprintf( __( '%s', 'rb-site-social-links' ), get_option( 'rb_skype_text' ) ) ); ?> */ 
 
     printf(__(
         '<input type="text" id="%1$s" class="large-text" name="%2$s" value="%3$s" placeholder="bashir.rased">','rb-site-social-links'),
-        'rb_skype_link',
-        'rb_skype_link',
+        'rb_skype_text',
+        'rb_skype_text',
         $rb_site_social_links_option
     );
 }

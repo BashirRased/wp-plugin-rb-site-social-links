@@ -3,62 +3,84 @@ Contributors: bashirrased
 Requires at least: 5.3
 Tested up to: 5.8
 Requires PHP: 5.6
-Stable tag: 1.0.1
+Stable tag: 1.0.2
 Tags: social, media, links, site.
 License: GPLv2
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
-Dynamically add your website's social media links.
+Dynamically add your website's social media links with WordPress dashboard general setting page.
 
 == Description ==
-Step-1: Install and active our plugin.
 
-Step-2: Go to Setting -> General Page. We have the option to add social media links there.
+RB Site Social Links plugin use for dynamically add your website social icon link. You need change only your social icon link href address or social icon text.
 
-Step-3: Add your website's social media links.
+### Usage
 
-Step-4: Use these codes to display social media links on your website.
+= For Facebook Link with a tag element is the href attribute: =
+**Add PHP Code: ** `echo esc_url(get_option('rb_facebook_link'));`
 
-For Facebook Links:
-`<a href="<?php echo esc_url(get_option('rb_facebook_link')); ?>">Facebook</a>`
+= For Twitter Link with a tag element is the href attribute: =
+**Add PHP Code: ** `echo esc_url(get_option('rb_twitter_link'));`
 
-For Twitter Links:
-`<a href="<?php echo esc_url(get_option('rb_twitter_link')); ?>">Twitter</a>`
+= For LinkedIn Link with a tag element is the href attribute: =
+**Add PHP Code: ** `echo esc_url(get_option('rb_linkedin_link'));`
 
-For LinkedIn Links:
-`<a href="<?php echo esc_url(get_option('rb_linkedin_link')); ?>">LinkedIn</a>`
+= For Instagram Link with a tag element is the href attribute: =
+**Add PHP Code: ** `echo esc_url(get_option('rb_instagram_link'));`
 
-For Instagram Links:
-`<a href="<?php echo esc_url(get_option('rb_instagram_link')); ?>">Instagram</a>`
+= For Pinterest Link with a tag element is the href attribute: =
+**Add PHP Code: ** `echo esc_url(get_option('rb_pinterest_link'));`
 
-For Pinterest Links:
-`<a href="<?php echo esc_url(get_option('rb_pinterest_link')); ?>">Pinterest</a>`
+= For Behance Link with a tag element is the href attribute: =
+**Add PHP Code: ** `echo esc_url(get_option('rb_behance_link'));`
 
-For Behance Links:
-`<a href="<?php echo esc_url(get_option('rb_behance_link')); ?>">Behance</a>`
+= For Dribbble Link with a tag element is the href attribute: =
+**Add PHP Code: ** `echo esc_url(get_option('rb_dribbble_link'));`
 
-For Dribbble Links:
-`<a href="<?php echo esc_url(get_option('rb_dribbble_link')); ?>">Dribbble</a>`
+= For Github Link with a tag element is the href attribute: =
+**Add PHP Code: ** `echo esc_url(get_option('rb_github_link'));`
 
-For Github Links:
-`<a href="<?php echo esc_url(get_option('rb_github_link')); ?>">Github</a>`
+= For YouTube Link with a tag element is the href attribute: =
+**Add PHP Code: ** `echo esc_url(get_option('rb_youtube_link'));`
 
-For YouTube Links:
-`<a href="<?php echo esc_url(get_option('rb_youtube_link')); ?>">YouTube</a>`
+= For Blogger Link with a tag element is the href attribute: =
+**Add PHP Code: ** `echo esc_url(get_option('rb_blogger_link'));`
 
-For Blogger Links:
-`<a href="<?php echo esc_url(get_option('rb_blogger_link')); ?>">Blogger</a>`
+= For WordPress.com Link with a tag element is the href attribute: =
+**Add PHP Code: ** `echo esc_url(get_option('rb_wordpress_link'));`
 
-For WordPress.com Links:
-`<a href="<?php echo esc_url(get_option('rb_wordpress_link')); ?>">WordPress.com</a>`
+= For CodePen Link with a tag element is the href attribute: =
+**Add PHP Code: ** `echo esc_url(get_option('rb_codepen_link'));`
 
-For CodePen Links:
-`<a href="<?php echo esc_url(get_option('rb_codepen_link')); ?>">CodePen</a>`
+= For Skype address: =
+**Add PHP Code: ** `echo esc_html(sprintf(__('Skype ID: %s','rb-site-social-links'), get_option( 'rb_skype_text')));`
 
-For Skype Links:
-`<div><?php echo esc_html( sprintf( __( 'Skype ID: %s', 'rb-site-social-links' ), get_option( 'rb_skype_link' ) ) ); ?></div>`
+== Installation ==
+
+### From your WordPress dashboard
+
+= Visit =
+Plugins > Add New
+
+= Search =
+for "RB Site Social Links"
+
+= Install and Activate =
+RB Site Social Links from your Plugins page
+
+= Go to =
+Setting -> General Page
+
+= Links add =
+Add your website's social media links
 
 == Changelog ==
+
+= 1.0.2 =
+* 29.10.2021 - Third version submission
+* Plugin URI Add
+* Plugin Description change
+* Add new plugin tabs 1. Installation
 
 = 1.0.1 =
 * 22.10.2021 - Second submission
