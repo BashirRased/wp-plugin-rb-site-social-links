@@ -1,14 +1,14 @@
 === RB Site Social Links ===
 Contributors: bashirrased
-Requires at least: 5.3
-Tested up to: 5.8
-Requires PHP: 5.6
-Stable tag: 1.0.3
+Requires at least: 5.0
+Tested up to: 6.2
+Requires PHP: 7.1
+Stable tag: 1.0.4
 Tags: social, media, links, site.
 License: GPLv2
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
-Dynamically add your website's social media links with WordPress dashboard general setting page.
+RB Site Social Links plugin use for your site social links add.
 
 == Description ==
 
@@ -132,22 +132,26 @@ Add your website's social media links
 
 == Changelog ==
 
+= 1.0.4 =
+* 29.03.2022 - 5th version submission
+* readme.txt edit
+
 = 1.0.3 =
-* 10.12.2021 - Fourth version submission
+* 10.12.2021 - 4th version submission
 * Instagram Link Problem Solve
 * readme.txt edit
 
 = 1.0.2 =
-* 29.10.2021 - Third version submission
+* 29.10.2021 - 3rd version submission
 * Plugin URI Add
 * Plugin Description change
 * Add new plugin tabs 1. Installation
 
 = 1.0.1 =
-* 22.10.2021 - Second submission
+* 22.10.2021 - 2nd submission
 * Add Author URI
 * View html php codes in plugin description tab
 * Add Banner & Icon Images
 
 = 1.0.0 =
-* 09.09.2021 - First submission
+* 09.09.2021 - 1st submission

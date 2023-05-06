@@ -1,16 +1,33 @@
 <?php
 /**
- * Plugin Name: RB Site Social Links
- * Plugin URI: https://github.com/BashirRased/wp-plugin-rb-site-social-links
- * Description: Dynamically add your website's social media links with WordPress dashboard general setting page.
- * Author: Bashir Rased
- * Author URI: https://profiles.wordpress.org/bashirrased2017/
- * Version: 1.0.3
- * Text Domain: rb-site-social-links
- * License: GPLv2
- * License URI: https://www.gnu.org/licenses/gpl-2.0.html
+ * Plugin Name:       RB Site Social Links
+ * Plugin URI:        https://github.com/BashirRased/wp-plugin-rb-site-social-links
+ * Description:       RB Site Social Links plugin use for your site social links add.
+ * Version:           1.0.0
+ * Requires at least: 5.0
+ * Tested up to: 6.2
+ * Requires PHP: 7.1
+ * Author:            Bashir Rased
+ * Author URI:        https://profiles.wordpress.org/bashirrased2017/
+ * Text Domain:       rb-site-social-links
+ * Domain Path: 	  /languages
+ * License:           GPL v2 or later
+ * License URI:       http://www.gnu.org/licenses/gpl-2.0.txt
+ * Update URI:        https://github.com/BashirRased/wp-plugin-rb-site-social-links
  */
 
+// Exit if accessed directly.
+if ( ! defined( 'ABSPATH' ) ) {
+	exit;
+}
+
+// Plugin Text domain loaded
+function rb_plugin_textdomain() {
+    load_plugin_textdomain('rb-site-social-links', false, dirname(plugin_basename(__FILE__)).'/languages'); 
+}
+add_action('plugins_loaded', 'rb_plugin_textdomain');
+
+// Redirect Page Link Activated
 add_action('activated_plugin', function ($plugin) {
 	if (plugin_basename(__FILE__) == $plugin) {
 		wp_redirect(admin_url('options-general.php#rb-social-links-section'));
@@ -18,13 +35,15 @@ add_action('activated_plugin', function ($plugin) {
 	}
 });
 
+// Settings Page Link
 add_filter('plugin_action_links_' . plugin_basename(__FILE__), function ($links) {
-	$link = sprintf("<a href='%s' style='color:#b32d2e;'>%s</a>", admin_url( 'options-general.php#rb-social-links-section'), __('Settings', 'rb-site-social-links'));
+	$link = sprintf("<a href='%s' style='color:#b32d2e;'>%s</a>", admin_url('options-general.php#rb-social-links-section'), __('Settings', 'rb-site-social-links'));
 	array_push($links, $link);
 	return $links;
 });
 
-add_filter( 'plugin_row_meta', function ($links, $plugin) {
+// Github Page Link
+add_filter('plugin_row_meta', function ($links, $plugin) {
 	if (plugin_basename(__FILE__) == $plugin) {
 		$link = sprintf("<a href='%s' style='color:#b32d2e;'>%s</a>", esc_url('https://github.com/BashirRased/wp-plugin-rb-site-social-links'), __('Fork on Github', 'rb-site-social-links'));
 		array_push($links, $link);
