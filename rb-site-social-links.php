@@ -3,7 +3,8 @@
  * Plugin Name: RB Site Social Links
  * Description: Dynamically add your website's social media links.
  * Author: Bashir Rased
- * Version: 1.0.0
+ * Author URI: https://profiles.wordpress.org/bashirrased2017/
+ * Version: 1.0.1
  * Text Domain: rb-site-social-links
  * License: GPLv2
  * License URI: https://www.gnu.org/licenses/gpl-2.0.html
