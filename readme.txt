@@ -7,7 +7,6 @@ Stable tag: 1.0.4
 Tags: social, media, links, site.
 License: GPLv2
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
-Update URI: https://github.com/BashirRased/wp-plugin-rb-site-social-links
 
 RB Site Social Links plugin use for your site social links add.
 
