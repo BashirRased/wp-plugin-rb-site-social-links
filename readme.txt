@@ -1,6 +1,6 @@
 === RB Site Social Links ===
 Contributors: bashirrased2017
-Donate link: https://profiles.wordpress.org/bashirrased2017/
+Donate link: https://bashirrased.com/
 Requires at least: 6.4
 Tested up to: 6.5
 Requires PHP: 7.0
