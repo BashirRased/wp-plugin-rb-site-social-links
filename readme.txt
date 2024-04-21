@@ -1,9 +1,10 @@
 === RB Site Social Links ===
-Contributors: bashirrased
-Requires at least: 5.5
-Tested up to: 6.4
-Requires PHP: 5.6
-Stable tag: 1.0.4
+Contributors: bashirrased2017
+Donate link: https://profiles.wordpress.org/bashirrased2017/
+Requires at least: 6.4
+Tested up to: 6.5
+Requires PHP: 7.0
+Stable tag: 1.0.5
 Tags: social, media, links, site.
 License: GPLv2
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -12,104 +13,7 @@ RB Site Social Links plugin use for your site social links add.
 
 == Description ==
 
-RB Site Social Links plugin use for dynamically add your website social icon link. You need change only your social icon link href address or social icon text.
-
-== Usage ==
-
-### For Facebook Link:
-* Add PHP Code:
-<span><?php</span>
-<span> echo esc_url(get_option('rb_facebook_link')); </span>
-<span>?></span>
-
-### For Twitter Link:
-* Add PHP Code:
-<span><?php</span>
-<span> echo esc_url(get_option('rb_twitter_link')); </span>
-<span>?></span>
-
-### For LinkedIn Link:
-* Add PHP Code:
-<span><?php</span>
-<span> echo esc_url(get_option('rb_linkedin_link')); </span>
-<span>?></span>
-
-### For Instagram Link:
-* Add PHP Code:
-<span><?php</span>
-<span> echo esc_url(get_option('rb_instagram_link')); </span>
-<span>?></span>
-
-### For Pinterest Link:
-* Add PHP Code:
-<span><?php</span>
-<span> echo esc_url(get_option('rb_pinterest_link')); </span>
-<span>?></span>
-
-### For Behance Link:
-* Add PHP Code:
-<span><?php</span>
-<span> echo esc_url(get_option('rb_behance_link')); </span>
-<span>?></span>
-
-### For Dribbble Link:
-* Add PHP Code:
-<span><?php</span>
-<span> echo esc_url(get_option('rb_dribbble_link')); </span>
-<span>?></span>
-
-### For Github Link:
-* Add PHP Code:
-<span><?php</span>
-<span> echo esc_url(get_option('rb_github_link')); </span>
-<span>?></span>
-
-### For YouTube Link:
-* Add PHP Code:
-<span><?php</span>
-<span> echo esc_url(get_option('rb_youtube_link')); </span>
-<span>?></span>
-
-### For Blogger Link:
-* Add PHP Code:
-<span><?php</span>
-<span> echo esc_url(get_option('rb_blogger_link')); </span>
-<span>?></span>
-
-### For WordPress.com Link:
-* Add PHP Code:
-<span><?php</span>
-<span> echo esc_url(get_option('rb_wordpress_link')); </span>
-<span>?></span>
-
-### For CodePen Link:
-* Add PHP Code:
-<span><?php</span>
-<span> echo esc_url(get_option('rb_codepen_link')); </span>
-<span>?></span>
-
-### For Skype Address:
-* Add PHP Code:
-<span><?php</span>
-<span> echo esc_html(printf(__('%s','rb-site-social-links'),</span>
-<span> get_option('rb_skype_text'))); </span>
-<span>?></span>
-
-== Screenshots ==
-1. WordPress Dashboard Admin -> Setting -> General Page.
-2. Usage Facebook Link.
-3. Usage Twitter Link.
-4. Usage LinkedIn Link.
-5. Usage Instagram Link.
-6. Usage Pinterest Link.
-7. Usage Behance Link.
-8. Usage Dribbble Link.
-9. Usage Github Link.
-10. Usage YouTube Link.
-11. Usage Blogger Link.
-12. Usage WordPress.com Link.
-13. Usage CodePen Link.
-14. Usage Skype Address.
+RB Site Social Links plugin use for dynamically add your website social icon link. You need change only your social account link.
 
 == Installation ==
 
@@ -130,7 +34,22 @@ Setting -> General Page
 = Links add =
 Add your website's social media links
 
+== Frequently Asked Questions ==
+
+= 1. Need any other plugin requirements? =
+Need a plugin [RB Theme Helpler](https://wordpress.org/plugins/rb-theme-helper/)
+
+== Screenshots ==
+
+1. WordPress Dashboard Admin -> Setting -> General Page.
+
 == Changelog ==
+
+= 1.0.5 =
+* 21.04.2024 - 6th version submission
+* Full editing
+* More social icons add
+* Connect with plugin - RB Theme Helper
 
 = 1.0.4 =
 * 29.03.2022 - 5th version submission
@@ -155,3 +74,8 @@ Add your website's social media links
 
 = 1.0.0 =
 * 09.09.2021 - 1st submission
+
+== Upgrade Notice ==
+
+= 1.0.5 =
+This version is more upgrade this plugin.
