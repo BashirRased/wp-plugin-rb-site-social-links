@@ -5,7 +5,7 @@ Requires at least: 6.4
 Tested up to: 6.5
 Requires PHP: 7.0
 Stable tag: 1.0.5
-Tags: social, media, links, site.
+Tags: social links, site links, social media links
 License: GPLv2
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -26,7 +26,7 @@ Plugins > Add New
 for "RB Site Social Links"
 
 = Install and Activate =
-RB Site Social Links from your Plugins page
+"RB Site Social Links" from your Plugins page
 
 = Go to =
 Setting -> General Page
