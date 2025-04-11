@@ -2,9 +2,9 @@
 Contributors: bashirrased2017
 Donate link: https://bashirrased.com/
 Requires at least: 6.4
-Tested up to: 6.5
+Tested up to: 6.8
 Requires PHP: 7.0
-Stable tag: 1.0.5
+Stable tag: 1.0.6
 Tags: social links, site links, social media links
 License: GPLv2
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -44,6 +44,9 @@ Need a plugin [RB Theme Helpler](https://wordpress.org/plugins/rb-theme-helper/)
 1. WordPress Dashboard Admin -> Setting -> General Page.
 
 == Changelog ==
+= 1.0.6 =
+* 08.04.2025 - 7th version submission
+* Remove some social links
 
 = 1.0.5 =
 * 21.04.2024 - 6th version submission
