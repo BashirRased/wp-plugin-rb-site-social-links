@@ -1,0 +1,56 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: RB Site Social Links\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-11-28 05:37+0000\n"
+"PO-Revision-Date: 2025-11-28 11:46+0600\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.8\n"
+"X-Loco-Version: 2.8.0; wp-6.8.3; php-8.2.27\n"
+"X-Domain: rb-site-social-links\n"
+
+#: rb-site-social-links.php:130
+msgid "Add your website social media links."
+msgstr "Add your website social media links."
+
+#. Author of the plugin
+msgid "Bashir Rased"
+msgstr "Bashir Rased"
+
+#: rb-site-social-links.php:58
+msgid "Fork on GitHub"
+msgstr "Fork on GitHub"
+
+#. Author URI of the plugin
+msgid "https://bashir-rased.com/"
+msgstr "https://bashir-rased.com/"
+
+#. URI of the plugin
+msgid "https://github.com/BashirRased/wp-plugin-rb-site-social-links"
+msgstr "https://github.com/BashirRased/wp-plugin-rb-site-social-links"
+
+#. Name of the plugin
+msgid "RB Site Social Links"
+msgstr "RB Site Social Links"
+
+#. Description of the plugin
+msgid ""
+"RB Site Social Links plugin allows you to add and manage your site's social "
+"links."
+msgstr ""
+"RB Site Social Links plugin allows you to add and manage your site's social "
+"links."
+
+#: rb-site-social-links.php:44
+msgid "Settings"
+msgstr "Settings"
+
+#: rb-site-social-links.php:77
+msgid "Social Media Links"
+msgstr "Social Media Links"
