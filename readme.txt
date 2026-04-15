@@ -1,10 +1,10 @@
 === RB Site Social Links ===
 Contributors: bashirrased2017
-Donate link: https://bashirrased.com/
-Requires at least: 6.4
-Tested up to: 6.7
-Requires PHP: 7.0
-Stable tag: 1.0.7
+Donate link: https://bashir-rased.com/
+Requires at least: 6.7
+Tested up to:      6.9
+Requires PHP:      8.1
+Stable tag: 1.0.8
 Tags: social links, site links, social media links
 License: GPLv2
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -64,6 +64,10 @@ No. RB Site Social Links works independently. You can display the icons anywhere
 1. Settings → General page where social links are added.
 
 == Changelog ==
+
+= 1.0.8 =
+* 15.04.2026 – 9th version submission
+* Updated Icons
 
 = 1.0.7 =
 * 28.11.2025 – 8th version submission

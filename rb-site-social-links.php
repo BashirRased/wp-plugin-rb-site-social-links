@@ -3,11 +3,10 @@
  * Plugin Name:       RB Site Social Links
  * Plugin URI:        https://github.com/BashirRased/wp-plugin-rb-site-social-links
  * Description:       RB Site Social Links plugin allows you to add and manage your site's social links.
- * Version:           1.0.7
- * Requires at least: 6.4
- * Tested up to:      6.7
- * Requires PHP:      7.4
- * PHP Version:       8.2
+ * Version:           1.0.8
+ * Requires at least: 6.7
+ * Tested up to:      6.9
+ * Requires PHP:      8.1
  * Author:            Bashir Rased
  * Author URI:        https://bashir-rased.com/
  * Text Domain:       rb-site-social-links
@@ -177,17 +176,17 @@ function rb_site_social_links_icon( $ul_id = '', $ul_class = '', $li_class = '',
 
 	// Social link option keys + matching icon classes.
 	$social_icons = array(
-		'rb_twitter_link'   => 'rb-twitter-x',
-		'rb_facebook_link'  => 'rb-facebook',
-		'rb_instagram_link' => 'rb-instagram',
-		'rb_pinterest_link' => 'rb-pinterest',
-		'rb_linkedin_link'  => 'rb-linkedin',
-		'rb_youtube_link'   => 'rb-youtube',
-		'rb_behance_link'   => 'rb-behance',
-		'rb_dribbble_link'  => 'rb-dribbble',
-		'rb_github_link'    => 'rb-github',
-		'rb_whatsapp_link'  => 'rb-whatsapp',
-		'rb_tiktok_link'    => 'rb-tiktok',
+		'rb_twitter_link'   => 'rbelad-sf rbelad-sf-twitter-x',
+		'rb_facebook_link'  => 'rbelad-sf rbelad-sf-facebook',
+		'rb_instagram_link' => 'rbelad-sf rbelad-sf-instagram',
+		'rb_pinterest_link' => 'rbelad-sf rbelad-sf-pinterest',
+		'rb_linkedin_link'  => 'rbelad-sf rbelad-sf-linkedin',
+		'rb_youtube_link'   => 'rbelad-sf rbelad-sf-youtube',
+		'rb_behance_link'   => 'rbelad-sf rbelad-sf-behance',
+		'rb_dribbble_link'  => 'rbelad-sf rbelad-sf-dribbble',
+		'rb_github_link'    => 'rbelad-sf rbelad-sf-github',
+		'rb_whatsapp_link'  => 'rbelad-sf rbelad-sf-whatsapp',
+		'rb_tiktok_link'    => 'rbelad-sf rbelad-sf-tiktok',
 	);
 
 	// Filter only fields with values.
